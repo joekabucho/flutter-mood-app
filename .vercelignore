@@ -1,0 +1,8 @@
+.dart_tool/
+.idea/
+.vscode/
+build/
+test/
+LOOM_SCRIPT.md
+*.iml
+*.log
