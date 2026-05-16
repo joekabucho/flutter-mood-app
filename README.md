@@ -133,6 +133,33 @@ test/                          # Widget tests
 
 > **Note:** Mood history is held in memory only. Refreshing the page clears entries. Persistence (e.g. `shared_preferences`) is a natural next step if you extend the app.
 
+## Deploy to Vercel
+
+This repo includes `vercel.json` and `scripts/vercel-build.sh` so Vercel installs Flutter during the build and publishes `build/web`.
+
+### Option A — GitHub integration (recommended)
+
+1. Push this repo to GitHub.
+2. Go to [vercel.com/new](https://vercel.com/new) and import **flutter-mood-app**.
+3. Leave the defaults (Vercel reads `vercel.json` automatically).
+4. Deploy. The first build may take several minutes while Flutter is downloaded.
+
+### Option B — Vercel CLI
+
+```bash
+npm i -g vercel
+cd flutter-mood-app
+vercel          # first deploy (link project)
+vercel --prod   # production deploy
+```
+
+### Local production build (optional)
+
+```bash
+flutter build web --release --base-href /
+# Static files are in build/web/
+```
+
 ## Tech stack
 
 - Flutter (Material 3)
