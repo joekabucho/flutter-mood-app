@@ -1,0 +1,11 @@
+{
+  "name": "Mood Tracker",
+  "short_name": "Mood",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F5F0EB",
+  "theme_color": "#5C6BC0",
+  "description": "Track how you feel throughout the week.",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false
+}
