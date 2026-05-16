@@ -93,6 +93,10 @@ flutter run
 flutter test
 ```
 
+Unit and widget tests cover mood models, `MoodFacePainter`, and core screen flows (logging moods, seven-entry cap, timeline order).
+
+**CI:** GitHub Actions runs `flutter analyze` and `flutter test` on every pull request to `main`.
+
 ### 5. Analyze code
 
 ```bash
